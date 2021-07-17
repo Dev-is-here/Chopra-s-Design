@@ -21,6 +21,9 @@
     <title>
                     Home - CHOPRA'S  |  Design
             </title>
+
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <meta name="description" content="NBBJ&#039;s New York Experience Design Studio: We Transform Places into Experiences">
     <!-- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="assests\css\style.css">
@@ -113,10 +116,42 @@ gtag('config', 'UA-2334506-6');
 </script>
 
 <body class="home page-template page-template-page-home page-template-page-home-php page page-id-5 overflow-x-hidden" data-template="base.twig">
-<header data-js-header class="site-header flex justify-between items-start content-start fixed top-0 left-0 right-0 z-9999">
-      <!-- <h1 data-js-site-logo class="site-name" role="banner">
-        <a class="site-logo" href="index.html" rel="home"> -->
-  <!-- CHOPRA'S | DESIGN -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!--  Show this only on mobile to medium screens  -->
+      <a class="navbar-brand d-lg-none" href="#">CHOPRA'S DESIGN</a>
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    <!--  Use flexbox utility classes to change how the child elements are justified  -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+    
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">What we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about/index.html">About Us</a>
+          </li>
+        </ul>
+        
+        
+    <!--   Show this only lg screens and up   -->
+        <a class="navbar-brand d-none d-lg-block" href="#">CHOPRA'S DESIGNS</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="work/index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- <header data-js-header class="site-header flex justify-between items-start content-start fixed top-0 left-0 right-0 z-9999">
+      
   <img src="wp-content/uploads/2017/09/logo2.png"
   style="height: 100px; width: 90px;"
   alt="">
@@ -131,7 +166,7 @@ gtag('config', 'UA-2334506-6');
       </button>
     </div>
 
-  </header>
+  </header> -->
 <div data-js-header class="site-header-bg fixed top-0 left-0 right-0 z-999"></div>
 <section data-js-nav-overlay data-js-animate-this class="nav-overlay fixed absolute--fill z-999 dark-blue-bg flex flex-column items-center content-center justify-center overflow-y-auto">
   <div class="center mw8 mt3 pt3 mt5-l pt0-l nav-overlay-content">
@@ -200,7 +235,7 @@ gtag('config', 'UA-2334506-6');
     </div>
     <div
       class="absolute absolute--fill flex items-center content-center justify-start z-2">
-      <div class="ph4">
+      <div class="center-me">
         <h3
           data-js-animate-this
           data-js-splash-title-top
@@ -946,6 +981,9 @@ var wpcf7_recaptcha = {"sitekey":"6LcWJfYaAAAAAEL5jFcpGChCNv2dOsXznncFWdOx","act
 <script type='text/javascript' src='wp-content/plugins/contact-form-7/modules/recaptcha/indexc225.js?ver=5.4.1' id='wpcf7-recaptcha-js'></script>
 <script type='text/javascript' src='wp-content/themes/esi-theme/dist/scripts/main_c94038a4.js' id='sage/main.js-js'></script>
 <script type='text/javascript' src='wp-includes/js/wp-embed.min9f31.js?ver=5.7.2' id='wp-embed-js'></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

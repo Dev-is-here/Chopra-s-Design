@@ -1,3 +1,47 @@
+
+
+/* Navbar CSS  */
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+
+@font-face {
+    font-family: first-font;
+    src: url("../fonts/Sequel Sans Light Body.ttf");
+  }
+  .navbar-dark .navbar-nav  .nav-link {
+    font-family: first-font;
+    font-size: 20px;
+  }
+
+  .navbar-brand{
+      font-family: first-font;
+      font-size: 25px;
+  }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav > li{
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+@media screen and (max-width:992px)  { .navbar-brand
+{
+   padding-left: 40%;
+}     }
+
+
+
+
+
+/* Navbar CSS Ends */
+
+
+
 .fp-enabled body, html.fp-enabled {
     margin: 0;
     padding: 0;
@@ -12,6 +56,9 @@
 }
 .fp-slide {
     float: left;
+}
+.center-me{
+    padding-left: 35%;
 }
 .fp-slide, .fp-slidesContainer {
     height: 100%;
