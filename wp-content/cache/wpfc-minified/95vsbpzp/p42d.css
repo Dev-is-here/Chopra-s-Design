@@ -14,6 +14,10 @@ nav,
 section {
   display: block;
 }
+
+.fh1m.s\:fh1lp.sans.\|.js-t-chars {
+  line-height: 1.4;
+}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -128,19 +132,19 @@ menu {
 @font-face {
   font-family: sequel;
   font-display: swap;
-  src: url(../../../themes/nightingale/public/fonts/3A8805_0_0.woff2)
+  src: url("../../../themes/nightingale/public/fonts/3A8805_0_0.woff2")
       format("woff2"),
-    url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/3A8805_0_0.woff)
-      format("woff");
+    url("../../../themes/nightingale/public/fonts/3A8805_0_0.woff2")
+      format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: sequel;
   font-display: swap;
-  src: url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/3A8805_1_0.woff2)
+  src: url("../../../themes/nightingale/public/fonts/3A8805_0_0.woff2")
       format("woff2"),
-    url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/3A8805_1_0.woff)
+    url("../../../themes/nightingale/public/fonts/3A8805_0_0.woff2")
       format("woff");
   font-weight: 700;
   font-style: normal;
@@ -148,9 +152,9 @@ menu {
 @font-face {
   font-family: steradian;
   font-display: swap;
-  src: url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/3A8805_2_0.woff2)
+  src: url("../../../themes/nightingale/public/fonts/SteradianLight.woff2")
       format("woff2"),
-    url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/3A8805_2_0.woff)
+    url("../../../themes/nightingale/public/fonts/SteradianLight.woff")
       format("woff");
   font-weight: 400;
   font-style: normal;
@@ -158,9 +162,9 @@ menu {
 @font-face {
   font-family: grandslang;
   font-display: swap;
-  src: url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/GrandSlang-Roman.woff2)
+  src: url("../../../themes/nightingale/public/fonts/GrandSlang-Roman.woff2")
       format("woff2"),
-    url(//www.nightingale.world/wp-content/themes/nightingale/public/fonts/GrandSlang-Roman.woff)
+    url("../../../themes/nightingale/public/fonts/GrandSlang Roman.woff")
       format("woff");
   font-weight: 400;
   font-style: normal;
@@ -324,7 +328,7 @@ strong {
   background-color: hsla(0, 0%, 100%, 0.25);
 }
 .blue {
-  color: #0053ff;
+  color: var(--brand-color);
 }
 .bg-blue {
   background-color: black;
@@ -1454,7 +1458,7 @@ strong {
   }
 }
 .header__link:after {
-  --height: 0.25rem;
+  --height: 0.15rem;
   content: "";
   position: absolute;
   left: -0.15rem;
@@ -2845,14 +2849,15 @@ body:not(.is-device) .outline--brand {
 }
 
 .steps .content p {
-  color: #676767;
-  font-size: 16px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .steps .content h2 {
-  font-weight: 600;
-  font-size: 16px;
-  color: #676767;
+  font-weight: 800;
+  font-size: 32px;
+  color: white;
 }
 
 .steps-container {
@@ -2863,7 +2868,7 @@ body:not(.is-device) .outline--brand {
 
 .steps-container .content {
   padding: 32px;
-  background-color: #f1bda5;
+  background-color: black;
   position: relative;
   border-radius: 0px 0px 80px 0px;
   box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
@@ -2885,7 +2890,7 @@ body:not(.is-device) .outline--brand {
   margin-bottom: 10px;
   width: 62px;
   height: 62px;
-  background-color: var(--primary);
+  background-color: white;
   border-radius: 50%;
   flex-shrink: 0;
   align-items: center;
@@ -2917,3 +2922,345 @@ body:not(.is-device) .outline--brand {
     left: 0;
   }
 }
+
+/* research section css */
+
+.print-design-river {
+  margin: 0;
+  font-family: Oswald, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  width: 100%;
+  background: transparent;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#print-design-river {
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#print-design-river::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/material+background.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: color;
+  z-index: -1;
+}
+
+#print-design-river::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0c4c91;
+  mix-blend-mode: hue;
+  z-index: 0;
+}
+
+#print-design-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 150px 0px 150px 0px;
+  overflow: visible !important;
+  z-index: 1;
+}
+
+@media screen and (max-width: 699px) {
+  #print-design-info {
+    margin: 100px 0px 150px 0px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #print-design-info {
+    margin: 100px 0px 100px 0px;
+  }
+}
+
+#print-design-info::after {
+  position: absolute;
+  bottom: -120%;
+  left: 0%;
+  width: 1255px;
+  height: 857px;
+  content: "";
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/paintswirl.png");
+  z-index: -1;
+}
+
+@media screen and (max-width: 1307px) {
+  #print-design-info::after {
+    bottom: -80%;
+    left: -30%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  #print-design-info::after {
+    bottom: -30%;
+    left: -60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #print-design-info::after {
+    bottom: 0%;
+    left: -90%;
+  }
+}
+
+#print-design-info p {
+  color: #c4e0ff;
+  font-size: 22pt;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 200;
+  text-shadow: 1px 1px 3px #111, 2px 2px 5px #111, 4px 4px 10px #111;
+}
+
+@media screen and (max-width: 450px) {
+  #print-design-info p {
+    font-size: 18pt;
+  }
+}
+
+#print-design-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: black;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.instructions {
+  color: white;
+  font-size: 14pt;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 13px;
+}
+
+#print-design-endless-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+#print-design-endless-row div {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: repeat;
+  transition: all 1s ease-in-out;
+}
+
+#print-design-endless-row div:hover {
+  background-size: auto 30%;
+  transition: all 1s ease-in-out;
+}
+
+.print-design-gallery-item {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/JEGC_full.jpg");
+  position: relative;
+  width: 23%;
+  height: 400px;
+  transform: scale(0.98);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 24pt;
+  font-weight: 900;
+  line-height: 25pt;
+  margin: 1px;
+}
+
+.print-design-gallery-item::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: -400px;
+  left: -400px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(150deg, #0c4c91cc, #000000cc);
+  opacity: 0;
+  border-radius: 500px;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.print-design-gallery-item:hover.print-design-gallery-item::after {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.print-design-gallery-item p {
+  position: relative;
+  font-size: 24pt;
+  font-weight: 900;
+  text-align: center;
+  padding: 0px 13px 0px 13px;
+  bottom: 50%;
+  right: 50%;
+  opacity: 0;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 620px) {
+  .print-design-gallery-item p {
+    font-size: 20pt;
+  }
+}
+
+.print-design-gallery-item:hover p {
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.line-2 {
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+@media screen and (max-width: 620px) {
+  .line-2 {
+    font-size: 14pt;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .print-design-gallery-item {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .print-design-gallery-item {
+    width: 49%;
+  }
+}
+
+.print-design-gallery-item:nth-child(2) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/JERC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(3) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/CET_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(4) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/JJF_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(5) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/JJRC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(6) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/JJTS_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(7) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/PHF_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(8) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/PHPC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(9) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/WBTS_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(10) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/WBRC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(11) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/WBGC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(12) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/GWP_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(13) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/SCRC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(14) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/TLPRC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(15) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/MMRC_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(16) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/NCF_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(17) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/ZTP_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(18) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/ACCS_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(19) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/DUF_full.jpg");
+}
+
+.print-design-gallery-item:nth-child(20) {
+  background: url("https://miscellaneousbucket.s3.amazonaws.com/print/DDF_full.jpg");
+}
+
+/* Team section CSS */
+
+/* /Contact Us Form */
